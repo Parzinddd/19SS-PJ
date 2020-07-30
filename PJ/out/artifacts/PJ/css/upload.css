@@ -1,0 +1,211 @@
+body{
+    margin: 0;
+}
+@font-face{
+    font-family: 'myFont';
+    src: url('../font/p130-Opificio_neue-regular.ttf');
+}
+/*导航栏*/
+.menu{
+    padding-right: 4%;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.menu li a{
+    float: left;
+    display: inline-block;
+    text-decoration: none;
+}
+.right{
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    float: right;
+}
+.right img:hover {
+    transform: scale(1.1, 1.1);
+}
+.dropdown img:hover {
+    transform: scale(1.1, 1.1);
+}
+.dropdown {
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    float: right;
+}
+
+.dropdown-content {
+    border-radius: 4px;
+    margin-right: 5px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+    padding-top:10%;
+    padding-left: 9%;
+    padding-right:10%;
+    text-align: center;
+    width: auto;
+    height: 30px;
+    color: black;
+}
+.dropdown-content img{
+    float: left;
+}
+.dropdown-content a:hover {background-color:#312d334f}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+#country,#city{
+    border-radius: 10px;
+    height: 34px;
+    width: 164px;
+}
+body {
+    background-color: #111111;
+}
+h2 {
+    font-family: 'myFont';
+    color: #f1f1f1;
+    text-align: center;
+}
+/*主体*/
+.content {
+    font-family: 'myFont';
+    display: grid;
+    grid-template-columns: 45% 43%;
+    grid-template-rows: repeat(4, 120px);
+    justify-content: space-between;
+    padding-left: 12%;
+    padding-right: 7%;
+    color: #f1f1f1;
+}
+.content img{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+/*图片位置*/
+.picture {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    background-color: #f1f1f1;
+    border: 5px solid rgba(180, 173, 98, 0.38);
+    border-radius: 20px;
+}
+.content input{
+    font-family: 'myFont';
+    height: 30px;
+    width: 320px;
+    border: 1px solid #b49123;
+    border-radius: 10px;
+    font-size: 20px;
+}
+/*描述*/
+.des{
+    font-family: 'myFont';
+    color: white;
+    margin-left: 13%;
+
+}
+.des input{
+    height: 200px;
+    width: 75%;
+    border: 4px solid #b49123;
+    border-radius: 20px;
+    font-size: 20px;
+}
+/*提交部分*/
+.put{
+    font-family: 'myFont';
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.put div{
+    display: inline;
+    padding-right: 100px;
+
+}
+#button{
+    font-family: 'myFont';
+    position: relative;
+    width:145px;
+    height: 45px;
+    border: 0;
+    border-radius: 25px;
+    font-size: 25px;
+    color: #0f0f0f;
+    background-color: #ffffff;
+
+}
+#button :hover{
+    transform: scale(1.1, 1.1);
+}
+#submit{
+    font-family: 'myFont';
+    width:145px;
+    height: 45px;
+    border: 0;
+    border-radius: 25px;
+    font-size: 25px;
+    color: #0f0f0f;
+    background-color: #ffffff;
+}
+#submit:hover{
+    transform: scale(1.1, 1.1);
+}
+#file1{
+    opacity: 0;
+    position: absolute;
+    overflow: hidden;
+    right: 0;
+    top: 0;
+}
+/*页脚*/
+.bottom{
+    font-family: 'myFont';
+    height: 30px;
+    padding-top: 20px;
+    font-size: 15px;
+    background-color: rgba(74, 74, 74, 0.38);
+    text-align: center;
+    color: aliceblue;
+}
+@media screen and (max-width: 500px) {
+    .menu li a, .dropbtn {
+        padding: 1px;
+    }
+    .content{
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+    .content input{
+        width: 95%;
+    }
+    .des{
+        margin: 0;
+    }
+    .des input{
+        width: 95%;
+    }
+    .put button{
+        margin-top: 5%;
+    }
+    .put div{
+        padding: 0;
+    }
+}

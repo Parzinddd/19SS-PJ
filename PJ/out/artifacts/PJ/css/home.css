@@ -1,0 +1,225 @@
+body{
+    margin: 0;
+    background-color: rgba(15, 15, 15, 0.66);
+}
+@font-face{
+    font-family: 'myFont';
+    src: url('../font/p130-Opificio_neue-regular.ttf');
+}
+/*导航栏*/
+.menu{
+    padding-right: 4%;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.menu li a{
+    float: left;
+    display: inline-block;
+    text-decoration: none;
+}
+.right{
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    float: right;
+}
+.right img:hover {
+    transform: scale(1.1, 1.1);
+}
+.dropdown img:hover {
+    transform: scale(1.1, 1.1);
+}
+.dropdown {
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    float: right;
+}
+
+.dropdown-content {
+    border-radius: 4px;
+    margin-right: 5px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+    padding-top:10%;
+    padding-left: 9%;
+    padding-right:10%;
+    text-align: center;
+    width: auto;
+    height: 30px;
+    color: black;
+}
+.dropdown-content img{
+    float: left;
+}
+.dropdown-content a:hover {background-color:#312d334f}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*主体内容*/
+.content {
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    grid-template-rows: repeat(2,430px) ;
+    padding-left: 120px;
+    padding-top: 50px;
+    padding-right: 120px;
+    background-color: #333333;
+    justify-content: space-evenly;
+
+}
+.content img {
+    border: 5px solid rgba(180, 173, 98, 0.38);
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+}
+.content img:hover {
+    transform: scale(1.1, 1.1);
+}
+.content p{
+    color: #f1f1f1;
+    overflow: hidden;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:2;
+    font-family: 'myFont';
+}
+.content h3{
+    color: #f1f1f1;
+    font-family: 'myFont';
+    font-size: 1.5em;
+}
+.content a {
+    color: #f1f1f1;
+}
+/*页脚*/
+.bottom{
+    background-color: #111111;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+.bottom img{
+    width: 100px;
+    height: 100px;
+}
+/*按钮*/
+.button{
+   position: fixed;
+    right: 85px;
+    top: 80%;
+}
+.button img:hover {
+    transform: scale(1.1, 1.1);
+}
+.c-banner{
+    height: 650px;
+    padding-left: 15%;
+    width: 70%;
+    padding-right: 15%;
+    padding-bottom: 1%;
+}
+.banner{
+    width: 70%;
+}
+.banner ul{
+    list-style: none;
+    margin-bottom: 0px;
+}
+.banner ul li{
+    position: absolute;
+    display: none;
+    opacity: 0;
+}
+.banner ul li:nth-child(1){
+    opacity: 1;
+    display: block;
+}
+.banner ul li img{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+}
+.banner ul li:first-child img{
+    position: relative;
+}
+.nexImg,.preImg{
+    padding: 25px 10px 25px 10px;
+    position: absolute;
+    top: 50%;
+    margin-top: -53px;
+    background: #000000;
+    opacity: 0.5;
+    border-radius: 5px;
+    z-index: 10;
+
+}
+.banner img{
+    width: 70%;
+    height: 650px;
+}
+.nexImg:hover,.preImg:hover{
+    opacity: 0.8;
+}
+.nexImg{
+    right: 11%;
+}
+.preImg{
+    left: 14%;
+}
+.jumpBtn{
+    width: 70%;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+}
+.jumpBtn ul{
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.jumpBtn ul li{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: white;
+    opacity: 0.9;
+    margin-left: 10px;
+}
+.jumpBtn ul li:first-child{
+    margin-left: 0px;
+}
+
+
+/*媒体查询*/
+@media only screen and (max-width:500px) {
+    .content{
+        display: block;
+        padding:5%;
+    }
+    .content img {
+        width: 50%;
+        height: 50%;
+        margin-left: 25%;
+    }
+    .button{
+        right: 3%;
+        top: 90%;
+    }
+    .menu li a, .dropbtn {
+        padding:1px ;
+    }
+}

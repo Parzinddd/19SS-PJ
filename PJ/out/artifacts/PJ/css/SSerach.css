@@ -1,0 +1,159 @@
+
+body{
+    margin: 0;
+    background-color: rgb(15, 15, 15);
+}
+@font-face{
+    font-family: 'myFont';
+    src: url('../font/p130-Opificio_neue-regular.ttf');
+}
+
+.menu{
+    padding-right: 4%;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.menu li a{
+    float: left;
+    display: inline-block;
+    text-decoration: none;
+}
+.right{
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    float: right;
+}
+.right img:hover {
+    transform: scale(1.1, 1.1);
+}
+.dropdown img:hover {
+    transform: scale(1.1, 1.1);
+}
+.dropdown {
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    float: right;
+}
+
+.dropdown-content {
+    border-radius: 4px;
+    margin-right: 5px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+    padding-top:10%;
+    padding-left: 9%;
+    padding-right:10%;
+    text-align: center;
+    width: auto;
+    height: 30px;
+    color: black;
+}
+.dropdown-content img{
+    float: left;
+}
+.dropdown-content a:hover {background-color:#312d334f}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.search {
+    font-family: 'myFont';
+    color: #f1f1f1;
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-left:  100px;
+    border: 5px solid rgba(255, 255, 255, 0.38);
+    border-radius: 20px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+}
+.result {
+    font-family: 'myFont';
+    color: #f1f1f1;
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-left:  100px;
+    border: 5px solid rgba(255, 255, 255, 0.38);
+    border-radius: 20px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+}
+#title{
+    width: 260px;
+    height: 23px;
+    border-radius: 8px;
+}
+#submit{
+    font-family: 'myFont';
+    width: 55px;
+    height: 30px;
+    border-radius: 10px;
+}
+#submit:hover{
+    transform: scale(1.1, 1.1);
+}
+.bottom{
+    font-family: 'myFont';
+    height: 30px;
+    padding-top: 20px;
+    font-size: 15px;
+    text-align: center;
+    color: aliceblue;
+}
+/*按钮*/
+.button{
+    position: fixed;
+    right: 35px;
+    top: 80%;
+}
+.button img:hover {
+    transform: scale(1.1, 1.1);
+}
+.content {
+    padding-right: 4%;
+    padding-left: 4%;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: repeat(4, 250px) 100px;
+    justify-content:space-between;
+    align-items: center;
+}
+.content img{
+    width:250px ;
+    height: 200px;
+    border: 5px solid rgba(180, 173, 98, 0.38);
+    border-radius: 20px;
+}
+.content img:hover {
+    transform: scale(1.1, 1.1);
+}
+.content div{
+    overflow: hidden;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:4;
+}
+.content p{
+    overflow: hidden;
+}
+.page a{
+    color: #f1f1f1;
+    padding: 1%;
+}
+.page {
+    font-family: 'myFont';
+    text-align: center;
+    font-size: 20px;
+}
